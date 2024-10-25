@@ -3,30 +3,35 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4; /* Светлый фон */
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #343a40; /* Темно-серый цвет */
   color: white;
-  padding: 10px 20px;
+  padding: 20px 0; /* Добавлено вертикальное выравнивание */
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень под заголовком */
 }
 
 nav a {
-  color: white;
+  color: #ffffff; /* Белый цвет текста для ссылок */
   text-decoration: none;
   margin: 0 15px;
+  padding: 10px 15px; /* Внутренние отступы для ссылок */
+  border-radius: 5px; /* Закругленные углы */
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход при наведении */
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #007bff; /* Синий цвет фона при наведении */
+  color: white; /* Цвет текста при наведении */
 }
 
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #4CAF50;
+  padding: 15px 0;
+  background-color: #343a40; /* Такой же темно-серый цвет */
   color: white;
   position: fixed;
   bottom: 0;
@@ -35,4 +40,26 @@ footer {
 
 h1, h2 {
   margin: 10px 0;
+  text-align: center; /* Центрирование заголовков */
+}
+
+.container {
+  max-width: 800px; /* Ограничение ширины */
+  margin: 0 auto; /* Центрирование контейнера */
+  padding: 20px;
+}
+
+button {
+  background-color: #28a745; /* Зеленый цвет для кнопок */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Закругленные углы для кнопок */
+  padding: 10px 15px;
+  cursor: pointer; /* Указатель при наведении на кнопки */
+  font-size: 16px;
+  transition: background-color 0.3s; /* Плавный переход */
+}
+
+button:hover {
+  background-color: #218838; /* Темно-зеленый при наведении */
 }

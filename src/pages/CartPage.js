@@ -3,10 +3,10 @@ import React from 'react';
 
 const CartPage = () => {
     return (
-        <div>
+        <div className="container">
             <h1>Корзина</h1>
             <p>Список товаров в корзине.</p>
-            {/* Здесь вы можете отобразить список товаров в корзине */}
+            <button>Оформить заказ</button> {/* Кнопка для примера */}
         </div>
     );
 };
